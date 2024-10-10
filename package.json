@@ -1,0 +1,26 @@
+{
+  "name": "filfil",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "go": "concurrently \"npx json-server --watch db.json --port 3602\" \"next dev\"",
+    "server": "npx json-server --watch db.json --port 3602"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "next": "14.2.13",
+    "react": "^18",
+    "react-dom": "^18",
+    "concurrently": "^9.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.13",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}
